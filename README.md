@@ -14,12 +14,23 @@ Includes single-player (AI) and local multiplayer modes, adjustable difficulty, 
 ![Game End](assets/gameplay/End_menu.jpg)
 
 ## Installation
+### 1. Clone the repository
     git clone https://github.com/CadenLau/Pong-Clone.git
     cd Pong-Clone
-    pip install -r requirements.txt
+### 2. Create and activate virtual environment
+#### macOS/Linux
+    python3 -m venv venv
+    source venv/bin/activate
+#### Windows (PowerShell)
+    python -m venv venv
+    venv\Scripts\Activate.ps1
+#### Windows (Command Prompt)
+    python -m venv venv
+    venv\Scripts\activate.bat
+### 3. Install dependencies
+    python -m pip install -r requirements.txt
 
 ## How to Run
-    pip install arcade
     python main.py
 
 ## Controls
