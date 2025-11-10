@@ -7,7 +7,7 @@ import arcade
 import random
 from pyglet.graphics import Batch
 
-FONT_PATH = os.path.join(os.path.dirname(__file__), "font", "pong-score.ttf")
+FONT_PATH = os.path.join(os.path.dirname(__file__), "assets/font", "pong-score.ttf")
 arcade.load_font(FONT_PATH)
 
 SCREEN_WIDTH = 800
@@ -160,9 +160,13 @@ class DifficultySelect(arcade.View):
         self.hard_box = arcade.shape_list.create_rectangle_filled(
             SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 - 100, 200, 60, arcade.color.WHITE
         )
+        self.back_box = arcade.shape_list.create_rectangle_filled(
+            SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 - 192.5, 150, 45, arcade.color.WHITE
+        )
         self.box_batch.append(self.easy_box)
         self.box_batch.append(self.medium_box)
         self.box_batch.append(self.hard_box)
+        self.box_batch.append(self.back_box)
 
         self.text_batch = Batch()
         self.title_text = arcade.Text(
@@ -205,6 +209,16 @@ class DifficultySelect(arcade.View):
             anchor_y="center",
             batch=self.text_batch,
         )
+        self.back_text = arcade.Text(
+            "Back",
+            SCREEN_WIDTH // 2,
+            SCREEN_HEIGHT // 2 - 192.5,
+            arcade.color.BLACK,
+            FONT_SIZE * 3 // 4,
+            anchor_x="center",
+            anchor_y="center",
+            batch=self.text_batch,
+        )
 
     def on_draw(self) -> None:
         self.clear()
@@ -234,6 +248,13 @@ class DifficultySelect(arcade.View):
                 # Hard selected
                 hard = Hard()
                 window.show_view(hard)
+            elif (
+                SCREEN_WIDTH // 2 - 75 < x < SCREEN_WIDTH // 2 + 75
+                and SCREEN_HEIGHT // 2 - 215 < y < SCREEN_HEIGHT // 2 - 170
+            ):
+                # Hard selected
+                back = StartView()
+                window.show_view(back)
 
 
 # ===== Game View =====
