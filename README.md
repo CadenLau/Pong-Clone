@@ -27,6 +27,9 @@ Includes single-player (AI) and local multiplayer modes, adjustable difficulty, 
 #### Windows (Command Prompt)
     python -m venv venv
     venv\Scripts\activate.bat
+*Make sure you have Python 3.12+ installed. You can also upgrade pip to avoid dependency issues:*
+
+    python -m pip install --upgrade pip
 ### 3. Install dependencies
     python -m pip install -r requirements.txt
 
