@@ -4,7 +4,7 @@ Includes single-player (AI) and local multiplayer modes, adjustable difficulty, 
 
 ## Demo
 ### Video
-[Click here](https://github.com/CadenLau/Pong-Clone/assets/gameplay/Pong_clone.mov)
+[Watch video here](https://github.com/CadenLau/Pong-Clone/raw/main/assets/gameplay/Pong_clone.mov)
 ### Screenshots
 #### Main Menu
 ![Main Menu](assets/gameplay/Start_menu.jpg)
