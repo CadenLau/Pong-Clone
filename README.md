@@ -53,7 +53,7 @@ Includes single-player (AI) and local multiplayer modes, adjustable difficulty, 
     ├── main.py
     ├── assets/
         ├── font/
-        ├── gameplay/
+        └── gameplay/
     ├── requirements.txt
     ├── .gitignore
     └── README.md
