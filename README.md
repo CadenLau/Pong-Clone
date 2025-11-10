@@ -51,7 +51,9 @@ Includes single-player (AI) and local multiplayer modes, adjustable difficulty, 
 ## Project Structure
     pong/
     ├── main.py
-    ├── font/
+    ├── assets/
+        ├── font/
+        ├── gameplay/
     ├── requirements.txt
     ├── .gitignore
     └── README.md
