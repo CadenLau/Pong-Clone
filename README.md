@@ -23,13 +23,13 @@ Includes single-player (AI) and local multiplayer modes, adjustable difficulty, 
     python main.py
 
 ## Controls
-**Start Menus:** Use your mouse to select options. 
-**Pause Menu:** Esc = unpause, Q = quit to Start 
-**Game End Menu:** Enter = play again, Q = quit to Start
+**Start Menus:** Use your mouse to select options    
+**Pause Menu:** Esc = unpause, Q = quit to Start    
+**Game End Menu:** Enter = play again, Q = quit to Start    
     
-**Player 1:** W = up, S = down
-**Player 2:** Up arrow = up, Down arrow = down   
-**Other:** Esc = pause
+**Player 1:** W = up, S = down    
+**Player 2:** Up arrow = up, Down arrow = down    
+**Other:** Esc = pause    
 
 ## Features
 - 60 FPS gameplay
