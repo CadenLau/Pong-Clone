@@ -49,11 +49,10 @@ Includes single-player (AI) and local multiplayer modes, adjustable difficulty, 
 - Object-oriented structure using Arcade Views
 
 ## Project Structure
-    pong/
     ├── main.py
     ├── assets/
-        ├── font/
-        └── gameplay/
+    |   ├── font/
+    |   └── gameplay/
     ├── requirements.txt
     ├── .gitignore
     └── README.md
